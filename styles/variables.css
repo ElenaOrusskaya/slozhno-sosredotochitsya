@@ -6,7 +6,7 @@
 :root {
   --main-font: "IBM Plex Mono", sans-sreif;
   --main-font-size: 18px;
-  --main-line-height: 23.4px;
+  --main-line-height: 1.3;
   --main-text-color: #f1b2ce;
   --bg-color: #000028;
   --text-weight: 400;
@@ -23,3 +23,12 @@
   --vertical-padding: 40px;
   --articles-gap: 20px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --main-padding: 20px;
+    --vertical-padding: 60px;
+    --sections-gap: 80px;
+  }
+}
+

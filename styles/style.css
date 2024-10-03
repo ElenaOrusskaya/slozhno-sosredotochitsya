@@ -8,6 +8,11 @@
   font-size: var(--main-font-size);
   color: var(--main-text-color);
   line-height: var(--main-line-height);
+  background-image: var(--bg-image, url("../images/cover-image-dark.png"));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
@@ -16,16 +21,11 @@
   align-items: center;
   justify-items: end;
   padding: var(--main-padding);
-  background-image: var(--bg-image, url("../images/cover-image-dark.png"));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .decorated__zone {
-  height: 100vh;
-  min-height: 668px;
   position: relative;
 }
 
@@ -106,7 +106,7 @@
 .header__description {
   justify-self: end;
   align-self: center;
-  width: 100%;
+  inline-size: 100%;
 }
 
 .title-decor {
@@ -158,7 +158,7 @@
   line-height: var(--main-line-height);
 }
 
-.artlcle-list {
+.article-list {
   display: grid;
   gap: var(--articles-gap);
 }
@@ -176,7 +176,7 @@
   font-weight: var(--text-weight);
 }
 
-.article__description .link {
+.link {
   text-decoration: none;
   text-shadow: 2px 2px var(--accent-color);
 }
@@ -219,6 +219,7 @@
   justify-content: center;
   align-items: center;
   padding: var(--main-padding);
+  min-height: 668px;
 }
 
 .footer__title {
@@ -226,12 +227,7 @@
 }
 
 @media (width >= 768px) {
-  :root {
-    --main-padding: 20px;
-    --vertical-padding: 60px;
-    --sections-gap: 80px;
-  }
-
+  
   .header__title {
     justify-self: left;
     margin-inline-start: calc(-1 * var(--main-padding));
@@ -277,6 +273,7 @@
 }
 
 @media (width >= 1024px) {
+  
   .what .article-list {
     grid-template-columns: repeat(3, 1fr);
   }
