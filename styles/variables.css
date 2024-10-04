@@ -22,6 +22,7 @@
   --sections-gap: 50px;
   --vertical-padding: 40px;
   --articles-gap: 20px;
+  --articles-padding: 10px;
 }
 
 @media (width >= 768px) {
