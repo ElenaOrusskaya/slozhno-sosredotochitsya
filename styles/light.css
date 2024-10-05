@@ -17,7 +17,7 @@
   --accent-color: #ff8dcb;
   --accent-text: #000028;
   --bg-image: url("../images/cover-image-light.png");
-  --visible: hidden;
+  --visiblity: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,6 +30,6 @@
     --accent-color: #ff8dcb;
     --accent-text: #000028;
     --bg-image: url("../images/cover-image-light.png");
-    --visible: hidden;
+    --visiblity: hidden;
   }
 }
